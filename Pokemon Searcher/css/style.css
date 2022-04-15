@@ -1,0 +1,90 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #feae96;
+  background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+  color: white;
+}
+
+.searcher > input {
+  padding: 0.5rem 1rem;
+  border: 3px solid #3D7DCA;
+}
+
+.searcher > button{
+  border: 3px solid #3D7DCA;
+  padding: 0.5rem 1rem;
+  background-color: #FFCB05;
+  cursor: pointer;
+}
+
+.pokemon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+.pokemon > img:hover {
+  animation: bounce 0.5s linear; 
+}
+
+.pokemon > h2 {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.pokemon > h3 {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.pokemon > img {
+  height: 180px;
+  cursor: grab;
+}
+
+.hidden{
+  display: none;
+}
+
+
+@keyframes bounce {
+  20% {
+      transform: translateY(-6px);
+  }
+  40% {
+      transform: translateY(0px);
+  }
+
+  80% {
+      transform: translateY(-2px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
